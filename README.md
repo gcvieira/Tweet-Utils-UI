@@ -5,8 +5,8 @@ Interface to collect, process and visualize tweets.
   - Python 3.8+
   - pip
   - Style fonts (MontSerrat and Montserrat Alternates)
-    Link Montserrat (Black, Bold and Light) https://fonts.google.com/specimen/Montserrat
-    Link Montserrat Alternates (Black, Bold and Light) https://fonts.google.com/specimen/Montserrat+Alternates
+    >Link Montserrat (Black, Bold and Light) https://fonts.google.com/specimen/Montserrat
+    >Link Montserrat Alternates (Black, Bold and Light) https://fonts.google.com/specimen/Montserrat+Alternates
   
   
 * Install
