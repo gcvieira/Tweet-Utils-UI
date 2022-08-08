@@ -16,4 +16,4 @@ With a prompt in current directory files type the command below to install depen
 
 ## Run
 With a prompt in current directory files type the command below to run application:
-python main.py --disable-web-security
+```python main.py --disable-web-security```
