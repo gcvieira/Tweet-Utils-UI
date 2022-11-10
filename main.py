@@ -101,6 +101,22 @@ class MainWindow(QMainWindow):
             args.append(self.ui.ui_pages.quick_report_display_count.text())
 
             self.teste.start(NAME_PYTHON, args)
+            console.append("\nGenerating Quick Report.")
+
+            scriptCsv = "convert_csv.py"
+            args = [self.getPath("scripts")+scriptCsv]
+            args.append("-i")
+            args.append(self.getPath("gathering") +
+                        self.ui.ui_pages.quick_report_input.currentText())
+
+            if self.ui.ui_pages.quick_report_output.text().strip() != "":
+                args.append("-o")
+                args.append(self.getPath("gathering") +
+                            self.ui.ui_pages.quick_report_output.text())
+
+            self.teste.waitForFinished()
+
+            self.teste.start(NAME_PYTHON, args)
 
         elif script == "rest_gathering.py":
             args = [self.getPath("scripts")+script]
