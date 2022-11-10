@@ -1,0 +1,3 @@
+# .gitignore file
+__pycache__/
+telas/__pycache__/
