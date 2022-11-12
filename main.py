@@ -100,8 +100,9 @@ class MainWindow(QMainWindow):
             args.append("-dc")
             args.append(self.ui.ui_pages.quick_report_display_count.text())
 
+            console.append("\nGenerating Quick Report.\n\nReading file. This may take a while...\n\nFile read successfully!\n\nProcessing the summary...\n")
+
             self.teste.start(NAME_PYTHON, args)
-            console.append("\nGenerating Quick Report.")
 
             scriptCsv = "convert_csv.py"
             args = [self.getPath("scripts")+scriptCsv]
